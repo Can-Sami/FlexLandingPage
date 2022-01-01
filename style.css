@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;600&display=swap');
+
+
+
+*{
+    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html{
+    background-color: #1A1A1D;
+    background-image: url("./images/background-waves.svg");
+    
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+
+li, a, button{
+    
+    font-weight: 500;
+    font-size: 16px;
+    color: #cacacf;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+}
+.logo{
+    color: rgb(102, 252, 241, 1);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 30px;
+
+}
+
+.nav__links li a{
+    color: rgb(197, 198, 199);
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color: rgb(149, 132, 209);
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(102, 252, 241, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #1A1A1D;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(102, 252, 241, 0.7);
+
+}
+
+
+/* Home Section */
+
+.home{
+    color: #cacacf;
+    text-align: center;
+    padding: 7% 10%;
+}
+
+.home h1{
+    color: #66fcf1;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.home__text{
+    color: #cacacf;
+}
+
+.buts{
+    padding: 9px, 15px;
+    margin: 20px;
+    cursor: pointer;
+    background-color:rgba(149, 198, 192, 0.9) ;
+}
+
+
+/*TypeWriting Effect */
+
+.type{
+    position: relative;
+    
+}
+
+.type::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 70%;
+    border-bottom: 1px solid;
+    bottom: -1px;
+    animation: blink 0.5s infinite ease
+}
+
+@keyframes blink {
+
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.most{
+    bottom: -20px;
+    position: relative;
+}
+
+.arrow__text{
+    font-weight: 100;
+    font-size: 15px;
+}
