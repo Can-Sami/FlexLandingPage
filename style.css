@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400;500;600;1000&display=swap');
 
 
 
@@ -12,13 +12,15 @@
 
 html{
     background-color: #1A1A1D;
-    background-image: url("./images/background-waves.svg");
+    background-image: url("./images/layered-waves-haikei\ \(9\).png");
     
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 /* Navigation Bar */
 
@@ -34,12 +36,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 10px 5%;
 }
 .logo{
     color: rgb(102, 252, 241, 1);
     font-size: 20px;
     cursor: pointer;
+    font-weight: 1000;
 }
 
 .nav__links{
@@ -76,12 +79,30 @@ button:hover{
 }
 
 
+
+
+
 /* Home Section */
 
+button{
+    padding: 9px 25px;
+    background-color: rgba(102, 252, 241, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #1A1A1D;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color: rgba(102, 252, 241, 0.7);
+
+}
 .home{
-    color: #cacacf;
+    color: #c5c6c7;
     text-align: center;
     padding: 7% 10%;
+
 }
 
 .home h1{
@@ -90,8 +111,21 @@ button:hover{
     font-size: 40px;
 }
 
+.page2__home h1{
+    color: #66fcf1;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+#typed{
+    color: #66fcf1;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
 .home__text{
-    color: #cacacf;
+    color: #c5c6c7;
 }
 
 .buts{
@@ -102,33 +136,6 @@ button:hover{
 }
 
 
-/*TypeWriting Effect */
-
-.type{
-    position: relative;
-    
-}
-
-.type::after{
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 70%;
-    border-bottom: 1px solid;
-    bottom: -1px;
-    animation: blink 0.5s infinite ease
-}
-
-@keyframes blink {
-
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
-}
-
 .most{
     bottom: -20px;
     position: relative;
@@ -138,3 +145,110 @@ button:hover{
     font-weight: 100;
     font-size: 15px;
 }
+
+
+/*Page2*/
+
+.page2__img{
+    position: absolute;
+    bottom: -1010px;
+    width: 800px;
+    height: 450px;
+    opacity: 0.5;
+    
+}
+
+.page2__home{
+    color: #c5c6c7;
+    position:relative;
+    text-align: center;
+    padding: 7% 10%;
+
+}
+
+.page2__home h1{
+    color: #66fcf1;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.page2__home__text{
+    color: #c5c6c7;
+}
+
+.hero-image {
+    position: relative;
+    height: 1000px;
+    background-image: url(./images/layered-waves-haikei\ \(6\).svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .material-icons { 
+    color: #57575c; 
+    font-size: 18px;
+    cursor:default;
+}
+
+.material-icons-page4{
+    color: #57575c;
+    font-family: 'Material Icons';
+    cursor: default;
+    font-size: 40px;
+    
+
+}
+.page4__image{
+    display: relative;
+    width: 70%;
+    height: 70%;
+}
+
+.faq{
+    border-bottom: solid rgb(102, 252, 242) 1px;
+    padding: 7px;
+    margin: 20px;
+    background-color:#66fcf215;
+    display: flex;
+    padding-left: 20px;
+    align-items: left;
+    margin-top: 5px;
+    border-radius: 3px;
+}
+
+
+.page4__home{
+    color: #c5c6c7;
+    position:relative;
+    text-align: center;
+    padding: 7% 10%;
+
+}
+
+.page4__home h1{
+    color: #66fcf1;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
+.page4__home__text{
+    color: #c5c6c7;
+}
+
+.faq-div h3{
+    color:#66fcf1;
+    weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    padding-left: 20px;
+    align-items: left;
+
+    
+}
+
+
+
+/* LOGIN PAGE */
+
+

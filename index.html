@@ -1,49 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/vaibhav111tandon/vov.css@latest/vov.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="./style.css" />
 
-    </head>
-    <body>
-        <header>
-            <h1 class="logo">FLEX SCRIPTS</h1>
-            <nav class="navbar">
-                <ul class="nav__links">
-                    <li> <a href="#">Services</a></li>
-                    <li> <a href="#">Projects</a></li>
-                    <li> <a href="#">About</a></li>
-                </ul>
-            </nav>
-            <a class="cta" href="#">
-                <button>Contact</button>
-            </a>
-        </header>
-
-        <div class="home">
-            <h1 class="most">The Most </h1> 
-            <h1 class="type"></h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, dolor esse! Aliquid dolores quaerat ex sit similique natus consectetur temporibus eius!</p>
+<body>
+    
+    <header>
+		<h1 class="logo">FLEX SCRIPTS</h1>
+		<nav class="navbar">
+			<ul class="nav__links">
+				<li> <a href="#">Services</a></li>
+				<li> <a href="#">Projects</a></li>
+				<li> <a href="#">About</a></li>
+			</ul>
+		</nav>
+		<a class="cta" href="#">
+			<button class="contact" id="signin">Sign In</button>
+		</a>
+	</header>
+    <section id="home__section">
+        <div class="home" id="cntrr">
+            <h1>Hypixel Bots <br><span id="element"></span></h1>
+            <p class="home__text">With highly dedicated team, contributors we provide the best Bots. All of our products
+                are coded carefully and gets updated regularly for your safety!</p>
             <div>
+                <script>
+                    var typed2 = new Typed('#element', {
+                        strings: ['Powerfull, ^100 Reliable, ^100 Flexible'],
+                        typeSpeed: 50,
+                        cursorChar: '_',
+                        backSpeed: 0,
+                    });</script>
                 <button class="buts"> Purchase Now</button>
             </div>
-            
-            <p class="arrow__text">Scroll Down</p>
-            <img src="./images/keyboard_arrow_down_white_36dp.svg" alt="">
-            
-        </div>
-
-        
-        
-
-    </body>
-    </html>
+            <span class="material-icons">lens</span>
+            <span class="material-icons">panorama_fish_eye</span>
+            <span class="material-icons">panorama_fish_eye</span>
+            <span class="material-icons">panorama_fish_eye</span>
+            <div class="content">
 
 
+                <div><img src="./images/keyboard_arrow_down_white_36dp.svg" alt=""></div>
+            </div>
+    </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="App.js"></script>
 
-    
+</body>
+
+</html>
+
